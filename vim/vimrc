@@ -1,0 +1,107 @@
+execute pathogen#infect()
+filetype plugin indent on
+
+let mapleader=","
+
+" Edit vimrc file
+nmap <Leader>vr :sp $MYVIMRC<cr>
+nmap <Leader>so :source $MYVIMRC<cr>
+
+" Duplicate line
+nmap <Leader>d yyz
+
+" Exit modes more easily
+imap jk <Esc>
+imap kj <Esc>
+
+" Moving lines
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+set encoding=utf-8
+scriptencoding utf-8
+
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+
+set autochdir
+set background=dark
+set display+=lastline
+set history=100
+set hlsearch
+set laststatus=2
+set magic
+set number
+set nowrap
+set ruler
+set showmatch
+set showmode
+set textwidth=0
+set wildmenu
+
+set backupdir=~/.vim/tmp/backup//
+set directory=~/.vim/tmp/swap//
+set undodir=~/.vim/tmp/undo//
+
+syntax enable
+
+" Also highlight all tabs and trailing whitespace characters
+highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+match ExtraWhitespace /\s\+$\|\t/
+
+" Removes trailing spaces
+function! TrimWhiteSpace()
+    %s/\s\+$//e
+endfunction
+nnoremap <silent> <Leader>rts :call TrimWhiteSpace()<CR>
+
+set expandtab
+set shiftwidth=2
+set smarttab
+set tabstop=2
+
+set ai "Auto indent
+set si "Smart indent
+set wrap "Wrap lines
+
+" clearing highlighted search
+nmap <silent> <leader>/ :nohlsearch<CR>
+
+" Easier moving in tabs and windows
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_
+map <C-L> <C-W>l<C-W>_
+map <C-H> <C-W>h<C-W>_
+
+" Make splits a bit more manageable.
+nnoremap <Leader>1 :vs<CR><C-w>l
+nnoremap <Leader>2 :split<CR><C-w>j
+nnoremap <C-Up> :bn<CR>
+nnoremap <C-Down> :bp<CR>
+
+map <C-e> :NERDTreeToggle<CR>
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_switch_buffer=0
+let g:ctrlp_working_path=0
+let g:ctrlp_use_caching=0
+
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ -g ""'
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.map
+"set wildignore+=*/doc/*,*/public/assets/*
+
+let g:netrw_liststyle=3
+
+cnoreabbrev w. w %:h/
