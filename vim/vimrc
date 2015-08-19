@@ -1,34 +1,14 @@
+"-------------------------------"
+" Set up packages with Pathogen "
+"-------------------------------"
+
 source ~/dotfiles/vim/bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect('bundle/{}', '~/dotfiles/vim/bundle/{}')
 filetype plugin indent on
 
-let mapleader=","
-
-" Edit vimrc file
-nmap <Leader>vr :sp $MYVIMRC<cr>
-nmap <Leader>so :source $MYVIMRC<cr>
-
-" Duplicate line
-nmap <Leader>d yyz
-
-" Tab/pane shortcuts
-nmap <Leader>tn :tabnew<cr>
-nmap <Leader>tc :tabc<cr>
-nmap <Leader>pv :vsplit<cr>
-nmap <Leader>ph :split<cr>
-nmap <Leader>pc :close<cr>
-
-" Exit modes more easily
-imap jk <Esc>
-imap kj <Esc>
-
-" Moving lines
-nnoremap <A-j> :m .+1<CR>==
-nnoremap <A-k> :m .-2<CR>==
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
-vnoremap <A-j> :m '>+1<CR>gv=gv
-vnoremap <A-k> :m '<-2<CR>gv=gv
+"----------"
+" Settings "
+"----------"
 
 set encoding=utf-8
 scriptencoding utf-8
@@ -38,6 +18,7 @@ set whichwrap+=<,>,h,l
 
 set background=dark
 set display+=lastline
+set guitablabel=%N\ %f
 set history=100
 set hlsearch
 set laststatus=2
@@ -53,6 +34,10 @@ set wildmenu
 set backupdir=~/.vim/tmp/backup//
 set directory=~/.vim/tmp/swap//
 set undodir=~/.vim/tmp/undo//
+
+"---------------------"
+" Syntax Highlighting "
+"---------------------"
 
 syntax enable
 
@@ -75,14 +60,44 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
-" clearing highlighted search
-nmap <silent> <leader>/ :nohlsearch<CR>
+"----------"
+" Mappings "
+"----------"
 
-" Easier moving in tabs and windows
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
-map <C-L> <C-W>l<C-W>_
-map <C-H> <C-W>h<C-W>_
+let mapleader=","
+
+" Edit vimrc file
+nmap <Leader>vr :sp $MYVIMRC<CR>
+nmap <Leader>so :source $MYVIMRC<CR>
+
+" Duplicate line
+nmap <Leader>d yyz
+
+" Tab/pane shortcuts
+nmap <Leader>tn :tabnew<CR>
+nmap <Leader>tc :tabc<CR>
+nmap <Leader>pv :vsplit<CR>
+nmap <Leader>ph :split<CR>
+nmap <Leader>pc :close<CR>
+
+" Moving in tabs
+nnoremap <C-L> :tabn<CR>
+nnoremap <C-H> :tabp<CR>
+
+" Exit modes more easily
+imap jk <Esc>
+imap kj <Esc>
+
+" Moving lines
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+" clearing highlighted search
+nmap <silent> <Leader>/ :nohlsearch<CR>
 
 " Make splits a bit more manageable.
 nnoremap <Leader>1 :vs<CR><C-w>l
@@ -91,6 +106,12 @@ nnoremap <C-Up> :bn<CR>
 nnoremap <C-Down> :bp<CR>
 
 map <C-e> :NERDTreeToggle<CR>
+
+cnoreabbrev w. w %:h/
+
+"---------"
+" Plugins "
+"---------"
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
@@ -107,11 +128,9 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ -g ""'
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.map
-"set wildignore+=*/doc/*,*/public/assets/*
 
 let g:netrw_liststyle=3
 
-cnoreabbrev w. w %:h/
-
 let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamecollapse=1
