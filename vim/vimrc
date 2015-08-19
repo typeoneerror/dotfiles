@@ -11,6 +11,13 @@ nmap <Leader>so :source $MYVIMRC<cr>
 " Duplicate line
 nmap <Leader>d yyz
 
+" Tab/pane shortcuts
+nmap <Leader>tn :tabnew<cr>
+nmap <Leader>tc :tabc<cr>
+nmap <Leader>pv :vsplit<cr>
+nmap <Leader>ph :split<cr>
+nmap <Leader>pc :close<cr>
+
 " Exit modes more easily
 imap jk <Esc>
 imap kj <Esc>
@@ -29,7 +36,6 @@ scriptencoding utf-8
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
-set autochdir
 set background=dark
 set display+=lastline
 set history=100
