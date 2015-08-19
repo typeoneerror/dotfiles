@@ -1,4 +1,5 @@
-execute pathogen#infect()
+source ~/dotfiles/vim/bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect('bundle/{}', '~/dotfiles/vim/bundle/{}')
 filetype plugin indent on
 
 let mapleader=","
