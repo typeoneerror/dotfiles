@@ -18,7 +18,7 @@ set whichwrap+=<,>,h,l
 
 set background=dark
 set display+=lastline
-set guitablabel=%N\ %f
+set guitablabel=%t
 set history=100
 set hlsearch
 set laststatus=2
@@ -81,8 +81,8 @@ nmap <Leader>ph :split<CR>
 nmap <Leader>pc :close<CR>
 
 " Moving in tabs
-nnoremap <C-L> :tabn<CR>
-nnoremap <C-H> :tabp<CR>
+nmap <C-L> :tabn<CR>
+nmap <C-H> :tabp<CR>
 
 " Exit modes more easily
 imap jk <Esc>
@@ -133,4 +133,8 @@ let g:netrw_liststyle=3
 
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#tabline#fnamecollapse=1
+let g:airline#extensions#tabline#fnamemod=':t'
+let g:airline#extensions#tabline#show_buffers=0
+let g:airline#extensions#tabline#fnamecollapse=0
+let g:airline#extensions#tabline#show_tab_nr=1
+let g:airline#extensions#tabline#tab_nr_type=1 " tab number
