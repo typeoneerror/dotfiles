@@ -132,3 +132,13 @@ let g:airline#extensions#tabline#show_buffers=0
 let g:airline#extensions#tabline#fnamecollapse=0
 let g:airline#extensions#tabline#show_tab_nr=1
 let g:airline#extensions#tabline#tab_nr_type=1 " tab number
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_ignore_files=['\.html$', '\c\.h$', '\.css$']
