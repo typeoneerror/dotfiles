@@ -41,16 +41,6 @@ set undodir=~/.vim/tmp/undo//
 
 syntax enable
 
-" Also highlight all tabs and trailing whitespace characters
-highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
-match ExtraWhitespace /\s\+$\|\t/
-
-" Removes trailing spaces
-function! TrimWhiteSpace()
-    %s/\s\+$//e
-endfunction
-nnoremap <silent> <Leader>rts :call TrimWhiteSpace()<CR>
-
 set expandtab
 set shiftwidth=2
 set smarttab
