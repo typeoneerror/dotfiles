@@ -54,7 +54,7 @@ set wrap "Wrap lines
 " Mappings "
 "----------"
 
-let mapleader=","
+let mapleader="\<Space>"
 
 " Edit vimrc file
 nmap <Leader>vr :sp $MYVIMRC<CR>
@@ -77,6 +77,10 @@ nmap <C-H> :tabp<CR>
 " Exit modes more easily
 imap jk <Esc>
 imap kj <Esc>
+
+" Quick jump to start/end of lines
+nmap <Leader>l $
+nmap <Leader>h ^
 
 " Moving lines
 nnoremap <A-j> :m .+1<CR>==
