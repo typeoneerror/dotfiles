@@ -72,6 +72,10 @@ nmap <Leader>so :source $MYVIMRC<CR>
 " Duplicate line
 nmap <Leader>d yyz
 
+" Inserting lines
+nmap <CR> o<Esc>
+nmap <Leader><CR> O<Esc>
+
 " Tab/pane shortcuts
 nmap <Leader>tn :tabnew<CR>
 nmap <Leader>tc :tabc<CR>
