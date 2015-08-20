@@ -35,6 +35,15 @@ set backupdir=~/.vim/tmp/backup//
 set directory=~/.vim/tmp/swap//
 set undodir=~/.vim/tmp/undo//
 
+"--------------"
+" Code folding "
+"--------------"
+
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
+
 "---------------------"
 " Syntax Highlighting "
 "---------------------"
