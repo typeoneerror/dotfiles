@@ -16,7 +16,6 @@ scriptencoding utf-8
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
-set background=dark
 set display+=lastline
 set guitablabel=%t
 set history=100
@@ -144,3 +143,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_ignore_files=['\.html$', '\c\.h$', '\.css$', '\.hbs']
+
+"let base16colorspace=256
+set background=dark
+"colorscheme base16-ocean
+set guifont=Fire\ Mono\ for\ Powerline:h15
