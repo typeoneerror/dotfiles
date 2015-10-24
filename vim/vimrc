@@ -120,14 +120,36 @@ nnoremap <Leader>2 :split<CR><C-w>j
 nnoremap <C-Up> :bn<CR>
 nnoremap <C-Down> :bp<CR>
 
-map <C-e> :NERDTreeToggle<CR>
 nmap <Leader>sw :StripWhitespace<CR>
 
 cnoreabbrev w. w %:h/
 
+"---------------------"
+" Open file in Finder "
+"---------------------"
+
+function! s:RevealInFinder()
+  if filereadable(expand("%"))
+    let l:command = "open -R %"
+  elseif getftype(expand("%:p:h")) == "dir"
+    let l:command = "open %:p:h"
+  else
+    let l:command = "open ."
+  endif
+  execute ":silent! !" . l:command
+ " For terminal Vim not to look messed up.
+ redraw!
+endfunction
+
+command! Reveal call <SID>RevealInFinder()
+nmap <Leader>r :Reveal<CR>
+
 "---------"
 " Plugins "
 "---------"
+
+map <C-e> :NERDTreeToggle<CR>
+map <Leader>e :NERDTreeFind<CR>
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.map
 
@@ -136,7 +158,7 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_switch_buffer=0
 let g:ctrlp_working_path=0
 let g:ctrlp_use_caching=0
-let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+let g:ctrlp_user_command = 'ag %s --nocolor --nogroup --hidden
       \ --ignore .git
       \ --ignore .svn
       \ --ignore .hg
