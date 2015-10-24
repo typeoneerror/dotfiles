@@ -85,6 +85,9 @@ nmap <Leader>so :source $MYVIMRC<CR>
 " Duplicate line
 nmap <Leader>d yyz
 
+" Clear line
+nmap <Leader>c$ cc<Esc>
+
 " Tab/pane shortcuts
 nmap <Leader>tn :tabnew<CR>
 nmap <Leader>tc :tabc<CR>
@@ -93,8 +96,12 @@ nmap <Leader>ph :split<CR>
 nmap <Leader>pc :close<CR>
 
 " Moving in tabs
-nmap <C-L> :tabn<CR>
 nmap <C-H> :tabp<CR>
+nmap <C-L> :tabn<CR>
+
+" Moving tabs
+nmap <Leader>th :tabm -1<CR>
+nmap <Leader>tl :tabm +1<CR>
 
 " Exit modes more easily
 imap jk <Esc>
