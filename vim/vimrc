@@ -34,6 +34,9 @@ set backupdir=~/.vim/tmp/backup//
 set directory=~/.vim/tmp/swap//
 set undodir=~/.vim/tmp/undo//
 
+set nobackup
+set noswapfile
+
 "--------------"
 " Code folding "
 "--------------"
