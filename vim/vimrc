@@ -86,7 +86,8 @@ nmap <Leader>so :source $MYVIMRC<CR>
 nmap <Leader>d yyz
 
 " Clear line
-nmap <Leader>c$ cc<Esc>
+nmap <Leader>co cc<Esc>
+nmap <Leader>o o<Esc>
 
 " Tab/pane shortcuts
 nmap <Leader>tn :tabnew<CR>
