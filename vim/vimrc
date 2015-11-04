@@ -4,7 +4,13 @@
 
 source ~/dotfiles/vim/bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect('bundle/{}', '~/dotfiles/vim/bundle/{}')
-filetype plugin indent on
+
+runtime macros/matchit.vim
+
+set nocompatible
+if has("autocmd")
+  filetype plugin indent on
+end
 
 "----------"
 " Settings "
@@ -87,6 +93,8 @@ nmap <Leader>d yyz
 
 " Clear line
 nmap <Leader>co cc<Esc>
+
+" Open line under current line
 nmap <Leader>o o<Esc>
 
 " Tab/pane shortcuts
@@ -112,10 +120,10 @@ imap kj <Esc>
 nmap <Leader>l $
 nmap <Leader>h ^
 
-" clearing highlighted search
+" Clear highlighted search
 nmap <silent> <Leader>/ :nohlsearch<CR>
 
-" Make splits a bit more manageable.
+" Make splits a bit more manageable
 nnoremap <Leader>1 :vs<CR><C-w>l
 nnoremap <Leader>2 :split<CR><C-w>j
 nnoremap <C-Up> :bn<CR>
