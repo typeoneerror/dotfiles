@@ -166,3 +166,19 @@ function remove_ds_store
 {
     find . -name .DS_Store -type f -delete
 }
+
+function set_hidden_files_flag()
+{
+    defaults write com.apple.finder AppleShowAllFiles $1
+    killall Finder
+}
+
+function show_hidden_files
+{
+    set_hidden_files_flag YES
+}
+
+function hide_hidden_files
+{
+    set_hidden_files_flag NO
+}
