@@ -160,14 +160,15 @@ nmap <Leader>r :Reveal<CR>
 map <C-e> :NERDTreeToggle<CR>
 map <Leader>e :NERDTreeFind<CR>
 
-let g:NERDTreeIgnore = ['\~$', '^tmp$[[dir]]', '^.git$[[dir]]', '^.sass-cache$[[dir]]', '.DS_Store']
+let g:NERDTreeIgnore=['\~$', '^tmp$[[dir]]', '^.git$[[dir]]', '^.sass-cache$[[dir]]', '.DS_Store']
+let g:NERDTreeShowHidden=1
 
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_map='<c-p>'
+let g:ctrlp_cmd='CtrlP'
 let g:ctrlp_switch_buffer=0
 let g:ctrlp_working_path=0
 let g:ctrlp_use_caching=0
-let g:ctrlp_user_command = 'ag %s --nocolor --nogroup --hidden
+let g:ctrlp_user_command='ag %s --nocolor --nogroup --hidden
       \ --ignore .git
       \ --ignore .svn
       \ --ignore .hg
@@ -192,10 +193,10 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0
 let g:syntastic_ignore_files=['\.html$', '\c\.h$', '\.css$', '\.hbs', '\.scss', '\.erb']
 
-let g:mustache_abbreviations = 1
+let g:mustache_abbreviations=1
