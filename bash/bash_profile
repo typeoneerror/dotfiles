@@ -38,6 +38,9 @@ export DYLD_LIBRARY_PATH="/usr/local/Cellar/imagemagick/6.8.9-8/lib"
 # FFFFUUU .DS_Store
 export FIGNORE=$FIGNORE:.DS_Store
 
+# Certificate fixes for OpenSSL
+export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
+
 # Colorized prompt
 # fg/bg
 #
