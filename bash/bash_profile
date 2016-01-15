@@ -22,8 +22,8 @@ alias svnsti='svn status --ignore-externals --quiet'
 # Rails
 alias migrate='rake db:migrate; rake db:migrate RAILS_ENV=test;'
 
-# Use Sublime for editing
-export EDITOR='subl -wn'
+# Use Vim for editing
+export EDITOR='vim'
 
 # Path to Solr
 export SOLR_HOME=$HOME/solr
