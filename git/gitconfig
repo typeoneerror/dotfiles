@@ -1,25 +1,25 @@
 [user]
-    name = Benjamin Borowski
+  name = Benjamin Borowski
 	email = ben.borowski@typeoneerror.com
 [alias]
 	st        = status
 	nl        = log --oneline
-    br        = branch
-    co        = checkout
-    cp        = cherry-pick
-    ds        = diff --staged
-    di        = diff
-    fetchall  = fetch -v --all
-    hist      = log --follow -p
-    logf      = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
-    logm      = log --author=USERNAME --pretty=format:'%h %cd %s' --date=short
-    logn      = log --graph --decorate --pretty=oneline --abbrev-commit
-    panic     = !tar cvf ../git_panic.tar *
-    diffw     = diff --word-diff=plain
-    diffl     = diff --ignore-space-at-eol
-    diffm     = diff --diff-filter=M
-    gh        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/tree/$(git rev-parse --abbrev-ref HEAD)\""
-    pr        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/pull/new/$(git rev-parse --abbrev-ref HEAD)\""
+  br        = branch
+  co        = checkout
+  cp        = cherry-pick
+  ds        = diff --staged
+  di        = diff
+  fetchall  = fetch -v --all
+  hist      = log --follow -p
+  logf      = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+  logm      = log --author=USERNAME --pretty=format:'%h %cd %s' --date=short
+  logn      = log --graph --decorate --pretty=oneline --abbrev-commit
+  panic     = !tar cvf ../git_panic.tar *
+  diffw     = diff --word-diff=plain
+  diffl     = diff --ignore-space-at-eol
+  diffm     = diff --diff-filter=M
+  gh        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/tree/$(git rev-parse --abbrev-ref HEAD)\""
+  pr        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/pull/new/$(git rev-parse --abbrev-ref HEAD)\""
 [color]
 	ui = true
 [push]
@@ -28,4 +28,4 @@
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
 [core]
-    excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
