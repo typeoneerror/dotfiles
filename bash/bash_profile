@@ -185,3 +185,13 @@ function hide_hidden_files
 {
     set_hidden_files_flag NO
 }
+
+function process_at_port
+{
+  lsof -i :$1
+}
+
+function kill_process_at_port
+{
+  kill `process_at_port $1`
+}
