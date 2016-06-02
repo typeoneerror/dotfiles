@@ -22,10 +22,12 @@ scriptencoding utf-8
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
+set cursorline
 set display+=lastline
 set guitablabel=%t
 set history=100
 set hlsearch
+set iskeyword+=-
 set laststatus=2
 set magic
 set relativenumber
@@ -163,6 +165,8 @@ map <Leader>e :NERDTreeFind<CR>
 let g:NERDTreeIgnore=['\~$', '^tmp$[[dir]]', '^.git$[[dir]]', '^.sass-cache$[[dir]]', '.DS_Store']
 let g:NERDTreeShowHidden=1
 
+let g:ag_prg='ag --vimgrep --case-sensitive'
+
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_cmd='CtrlP'
 let g:ctrlp_switch_buffer=0
@@ -199,6 +203,7 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
 let g:syntastic_ignore_files=['\.html$', '\c\.h$', '\.css$', '\.hbs', '\.scss', '\.erb']
+let g:syntastic_ruby_mri_exec = '~/.rvm/rubies/ruby-2.2.4/bin/ruby'
 
 let g:mustache_abbreviations=1
 
