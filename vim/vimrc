@@ -63,9 +63,10 @@ syntax enable
 let html_no_rendering=1
 
 "let base16colorspace=256
-set background=dark
 "colorscheme base16-ocean
+set background=dark
 set guifont=Fire\ Mono\ for\ Powerline:h15
+highlight Comment cterm=italic
 
 "------------"
 " Whitespace "
@@ -76,9 +77,9 @@ set shiftwidth=2
 set smarttab
 set tabstop=2
 
-set ai "Auto indent
-set si "Smart indent
-set wrap "Wrap lines
+set ai   " Auto indent
+set si   " Smart indent
+set wrap " Wrap lines
 
 "----------"
 " Mappings "
