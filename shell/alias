@@ -1,0 +1,13 @@
+alias chromed='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --enable-nacl'
+alias dev='cd $HOME/Dev'
+alias dnsflush='dscacheutil -flushcache; sudo killall -HUP mDNSResponder;'
+alias dt='cd $HOME/Desktop'
+alias gdiff='git diff | mate'
+alias gdiffb='git log master.. --oneline | wc -l'
+alias sdiff='svn diff | mate'
+alias ll='ls -al'
+alias mmysql=/Applications/MAMP/Library/bin/mysql
+alias mmysqldump=/Applications/MAMP/Library/bin/mysqldump
+alias npm-exec='PATH=$(npm bin):$PATH'
+alias so='du -sh'
+alias svnsti='svn status --ignore-externals --quiet'

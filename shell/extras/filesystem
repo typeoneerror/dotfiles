@@ -1,0 +1,5 @@
+# Show empty directories
+function show_empty_dirs
+{
+    find . -type d -empty -exec ls -ld {} \;
+}

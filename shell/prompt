@@ -1,3 +1,33 @@
+# Prompt
+PS1='\w $ '
+
+# Colorized prompt
+# fg/bg
+#
+# a = black
+# b = red
+# c = green
+# d = brown
+# e = blue
+# f = magenta
+# g = cyan
+# h = light gray
+# x = default
+#
+# DIR
+# SYM_LINK
+# SOCKET
+# PIPE
+# EXE
+# BLOCK_SP
+# CHAR_SP
+# EXE_SUID
+# EXE_GUID
+# DIR_STICKY
+# DIR_WO_STICKY
+export CLICOLOR=1
+export LSCOLORS=CxDxCxDxbxegedabagacad
+
 ## Colors
 # Reset
 off='\033[0m'       # Text Reset
@@ -71,3 +101,16 @@ on_BLUE='\033[0;104m'    # Blue
 on_PURPLE='\033[10;95m'  # Purple
 on_CYAN='\033[0;106m'    # Cyan
 on_WHITE='\033[0;107m'   # White
+
+# Show git branch with color in prompt
+function color_my_prompt
+{
+    local user_and_host="\[${wHITE}\][\u]"
+    local current_location="\[${wHITE}\]\w"
+    local git_branch_color="\[${pURPLE}\]"
+    local git_branch='`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'
+    local prompt_tail="\[${wHITE}\]$"
+    local last_color="\[${off}\]"
+    export PS1="$current_location $git_branch_color$git_branch$prompt_tail$last_color "
+}
+color_my_prompt
