@@ -1,9 +1,9 @@
 [user]
   name = Benjamin Borowski
-	email = ben.borowski@typeoneerror.com
+    email = ben.borowski@typeoneerror.com
 [alias]
-	st        = status
-	nl        = log --oneline
+  st        = status
+  nl        = log --oneline
   br        = branch
   co        = checkout
   cp        = cherry-pick
@@ -18,14 +18,17 @@
   diffw     = diff --word-diff=plain
   diffl     = diff --ignore-space-at-eol
   diffm     = diff --diff-filter=M
+  diffc     = diff --color-words=.
   gh        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/tree/$(git rev-parse --abbrev-ref HEAD)\""
   pr        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/pull/new/$(git rev-parse --abbrev-ref HEAD)\""
+  cne       = commit --all --amend --no-edit
+  rc        = rebase --continue
 [color]
-	ui = true
+  ui = true
 [push]
-	default = matching
+  default = matching
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
 [core]
   excludesfile = ~/.gitignore
