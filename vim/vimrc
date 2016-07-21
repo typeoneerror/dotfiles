@@ -22,7 +22,6 @@ scriptencoding utf-8
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
-set cursorline
 set display+=lastline
 set guitablabel=%t
 set history=100
@@ -31,6 +30,7 @@ set iskeyword+=-
 set laststatus=2
 set magic
 set relativenumber
+set nocursorline
 set nowrap
 set ruler
 set showmatch
