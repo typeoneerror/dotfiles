@@ -10,9 +10,3 @@ export GIT_PS1_SHOWUNTRACKEDFILES=true
 
 # Main path configuration
 export PATH="$HOME/bin:/usr/local/bin:$HOME/.yard/bin:$PATH"
-
-# Path to Solr
-export SOLR_HOME=$HOME/solr
-
-# Certificate fixes for OpenSSL
-export SSL_CERT_FILE=/usr/local/etc/openssl/cert.pem
