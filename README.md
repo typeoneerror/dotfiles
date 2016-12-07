@@ -1,16 +1,22 @@
-# .dotfiles
+dotfiles
+========
 
-## What is this?
+What is this?
+-------------
 
-.dotfiles for vim, git and various other programs.
+dotfiles for vim, git and various other programs.
 
-## Setup
+Setup
+-----
 
-Clone the git repo to ~
-    
-    cd ~
-    git clone git@github.com:typeoneerror/dotfiles.git
-    git submodule init
+Clone the git repo to your user (~) folder.
+
+```
+cd ~
+git clone git@github.com:typeoneerror/dotfiles.git
+cd dotfiles
+git submodule update --init --recursive
+```
 
 Run the link setup script to create symbolic links to the files in $HOME.
 
