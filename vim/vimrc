@@ -38,11 +38,12 @@ set showmode
 set textwidth=0
 set wildmenu
 
-set backupdir=~/.vim/tmp/backup//
-set directory=~/.vim/tmp/swap//
-set undodir=~/.vim/tmp/undo//
+set backupdir=~/.vim/tmp/backup
+set directory=~/.vim/tmp/swap
+set undodir=~/.vim/tmp/undo
 
 set nobackup
+set nowritebackup
 set noswapfile
 
 "--------------"
