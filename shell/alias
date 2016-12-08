@@ -10,4 +10,5 @@ alias mmysql=/Applications/MAMP/Library/bin/mysql
 alias mmysqldump=/Applications/MAMP/Library/bin/mysqldump
 alias npm-exec='PATH=$(npm bin):$PATH'
 alias so='du -sh'
+alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias svnsti='svn status --ignore-externals --quiet'
