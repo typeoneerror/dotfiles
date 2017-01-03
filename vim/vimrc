@@ -8,8 +8,12 @@ execute pathogen#infect('bundle/{}', '~/dotfiles/vim/bundle/{}')
 runtime macros/matchit.vim
 
 set nocompatible
+
 if has("autocmd")
   filetype plugin indent on
+
+  autocmd BufNewFile,BufRead *.es6 set filetype=javascript
+  autocmd FileType html,php setlocal expandtab shiftwidth=4 softtabstop=4
 end
 
 "----------"
