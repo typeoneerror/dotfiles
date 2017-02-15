@@ -33,6 +33,7 @@ set hlsearch
 set iskeyword+=-
 set laststatus=2
 set magic
+set number
 set relativenumber
 set nocursorline
 set nowrap
