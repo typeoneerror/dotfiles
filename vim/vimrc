@@ -24,8 +24,6 @@ set encoding=utf-8
 scriptencoding utf-8
 
 set backspace=eol,start,indent
-set whichwrap+=<,>,h,l
-
 set display+=lastline
 set guitablabel=%t
 set history=100
@@ -41,6 +39,7 @@ set ruler
 set showmatch
 set showmode
 set textwidth=0
+set whichwrap+=<,>,h,l
 set wildmenu
 
 set backupdir=~/.vim/tmp/backup
@@ -98,7 +97,11 @@ nmap <Leader>vr :sp $MYVIMRC<CR>
 nmap <Leader>so :source $MYVIMRC<CR>
 
 " Duplicate line
-nmap <Leader>d yyz
+nmap <Leader>d yyp
+
+" Move lines
+nmap <Leader>j ddp
+nmap <Leader>k kddpk
 
 " Clear line
 nmap <Leader>co cc<Esc>
