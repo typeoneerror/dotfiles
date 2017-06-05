@@ -23,6 +23,8 @@
   pr        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/pull/new/$(git rev-parse --abbrev-ref HEAD)\""
   cne       = commit --all --amend --no-edit
   rc        = rebase --continue
+  who       = blame
+  annotate  = blame
 [color]
   ui = true
 [push]
