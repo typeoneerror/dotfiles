@@ -158,8 +158,8 @@ function! s:RevealInFinder()
     let l:command = "open ."
   endif
   execute ":silent! !" . l:command
- " For terminal Vim not to look messed up.
- redraw!
+  " For terminal Vim not to look messed up.
+  redraw!
 endfunction
 
 command! Reveal call <SID>RevealInFinder()
