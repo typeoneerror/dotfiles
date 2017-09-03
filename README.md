@@ -30,7 +30,7 @@ The vim setup relies on [Ag](https://github.com/ggreer/the_silver_searcher) for 
 
     $ brew install the_silver_searcher
 
-This setup also relies on powerline plugins and therefore the powerline fonts are recommended. Follor the install instructions in [powerline/fonts](https://github.com/powerline/fonts) repo to add them.
+This setup also relies on powerline plugins and therefore the powerline fonts are recommended. Follow the install instructions in [powerline/fonts](https://github.com/powerline/fonts) repo to add them.
 
 ## Adding a new vim dependency
 
