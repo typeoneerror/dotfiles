@@ -19,6 +19,7 @@
   diffl     = diff --ignore-space-at-eol
   diffm     = diff --diff-filter=M
   diffc     = diff --color-words=.
+  diffn     = diff --name-only
   gh        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/tree/$(git rev-parse --abbrev-ref HEAD)\""
   pr        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/pull/new/$(git rev-parse --abbrev-ref HEAD)\""
   cne       = commit --all --amend --no-edit
