@@ -1,15 +1,28 @@
-alias chromed='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --enable-nacl'
+# Locations
 alias dev='cd $HOME/Dev'
-alias dnsflush='dscacheutil -flushcache; sudo killall -HUP mDNSResponder;'
 alias dt='cd $HOME/Desktop'
+
+# Git
 alias gdiff='git diff | subl'
 alias gdiffb='git log master.. --oneline | wc -l'
 alias sdiff='svn diff | subl'
+
+# Shortcuts
+alias dnsflush='dscacheutil -flushcache; sudo killall -HUP mDNSResponder;'
 alias ll='ls -al'
-alias mmysql=/Applications/MAMP/Library/bin/mysql
-alias mmysqldump=/Applications/MAMP/Library/bin/mysqldump
 alias npm-exec='PATH=$(npm bin):$PATH'
 alias so='du -sh'
-alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias svnsti='svn status --ignore-externals --quiet'
 alias tower='gittower .'
+
+# Apps
+alias chromed='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --enable-nacl'
+alias mmysql=/Applications/MAMP/Library/bin/mysql
+alias mmysqldump=/Applications/MAMP/Library/bin/mysqldump
+alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+
+# Focus.app
+alias focus='open focus://focus?minutes=25'
+alias focusbreak='open focus://break?minutes=5'
+alias focusunbreak='open focus://unbreak'
+alias focusoff='open focus://unfocus'
