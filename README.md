@@ -37,3 +37,7 @@ This setup also relies on powerline plugins and therefore the powerline fonts ar
 vim setup uses Pathogen with dependencies added to this git repo as submodules. For example, to add the elm.vim bundle, you would do:
 
     git submodule add git@github.com:lambdatoast/elm.vim.git vim/bundle/elm.vim
+
+## Updating a vim dependency
+
+SEE: [https://stackoverflow.com/a/5828396/53653](https://stackoverflow.com/a/5828396/53653)
