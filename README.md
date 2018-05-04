@@ -38,6 +38,10 @@ vim setup uses Pathogen with dependencies added to this git repo as submodules. 
 
     git submodule add git@github.com:lambdatoast/elm.vim.git vim/bundle/elm.vim
 
+## Removing a vim dependency
+
+See: [https://stackoverflow.com/a/1260982/53653](https://stackoverflow.com/a/1260982/53653)
+
 ## Updating a vim dependency
 
 SEE: [https://stackoverflow.com/a/5828396/53653](https://stackoverflow.com/a/5828396/53653)
