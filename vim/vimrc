@@ -196,6 +196,8 @@ endif
 
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
+cnoreabbrev Ag Ack!
+cnoreabbrev Ag! Ack!
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.map,*.svg
 
