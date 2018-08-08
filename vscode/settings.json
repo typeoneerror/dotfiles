@@ -1,13 +1,56 @@
 {
+  "cSpell.language": "en-GB,en",
+  "cSpell.dictionaryDefinitions": [
+    { "name": "typeoneerror-dictionary", "path": "/Users/typeoneerror/dotfiles/vscode/cspell/typeoneerror-dictionary.txt" },
+    { "name": "typeoneerror-web", "path": "/Users/typeoneerror/dotfiles/vscode/cspell/typeoneerror-web.txt" }
+  ],
+  "cSpell.dictionaries": [
+    "typeoneerror-dictionary",
+    "typeoneerror-web",
+    "typescript"
+  ],
+  "cSpell.enabledLanguageIds": [
+    "coffeescript",
+    "css",
+    "erb",
+    "go",
+    "handlebars",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "markdown",
+    "php",
+    "plaintext",
+    "scss",
+    "slim",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yaml",
+    "yml"
+  ],
+
+  "editor.colorDecorators": false,
   "editor.cursorBlinking": "solid",
-  "editor.fontSize": 16,
+  "editor.fontSize": 18,
   "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
+  "editor.tabCompletion": true,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 100,
+
+  "emmet.excludeLanguages": [
+    "haml",
+    "markdown"
+  ],
+
+  "explorer.confirmDragAndDrop": false,
+
+  "extensions.autoUpdate": true,
 
   "files.exclude": {
     "**/.git": true,
@@ -15,21 +58,46 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
+    "**/bower_components*": true,
     "**/build": true,
-    "**/node_modules": true,
+    "**/dist": true,
+    "**/node_modules*": true,
     "**/package-lock.json": true,
     "**/npm-shrinkwrap.json": true,
-    "**/yarn.lock": true
+    "**/tmp": true,
+    "**/.sass-cache": true,
+    "**/*.log": true,
+    "**/*.dump": true,
+    "**/*.rdb": true
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
 
+  "flow.pathToFlow": "${workspaceRoot}/node_modules/.bin/flow",
+
   "languageStylus.useSeparator": false,
 
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false,
+    "files.trimTrailingWhitespace": false
+  },
+
+  "prettier.singleQuote": true,
+
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.lineHeight": 1.25,
+
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-e>": true,
+    "<C-y>": true
+  },
   "vim.hlsearch": true,
   "vim.ignorecase": false,
   "vim.leader": "<Space>",
-  "vim.otherModesKeyBindings": [
+  "vim.normalModeKeyBindings": [
     // Open line under current line
     {
       "before": ["leader", "o"],
@@ -54,14 +122,41 @@
     {
       "before": ["leader", "d"],
       "after": ["y", "y", "p"]
+    },
+    // Comment line
+    {
+      "before": ["leader", "c", "c"],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.commentLine"
+        }
+      ]
+    },
+    // Uncomment line
+    {
+      "before": ["leader", "c", "u"],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.removeCommentLine"
+        }
+      ]
     }
   ],
   "vim.textwidth": 100,
 
+  "window.zoomLevel": 1,
+
+  "workbench.colorTheme": "Default High Contrast",
   "workbench.editor.showTabs": true,
+  "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "vscode-icons",
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.visible": true,
 
   "zenMode.fullScreen": false,
   "zenMode.hideStatusBar": false,
-  "zenMode.hideTabs": false,
+  "zenMode.hideTabs": false
+
 }
