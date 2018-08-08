@@ -15,6 +15,7 @@
   logm      = log --author=USERNAME --pretty=format:'%h %cd %s' --date=short
   logn      = log --graph --decorate --pretty=oneline --abbrev-commit
   panic     = !tar cvf ../git_panic.tar *
+  diffa     = diff --color --word-diff-regex=.
   diffw     = diff --word-diff=plain
   diffl     = diff --ignore-space-at-eol
   diffm     = diff --diff-filter=M
