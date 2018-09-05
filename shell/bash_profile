@@ -14,6 +14,7 @@ source $DOTFILES_HOME/shell/extras/process
 source $DOTFILES_HOME/shell/extras/psql
 source $DOTFILES_HOME/shell/extras/rvm
 source $DOTFILES_HOME/shell/extras/svn
+source $DOTFILES_HOME/shell/extras/title
 
 [[ -r ~/.bashrc ]] && . ~/.bashrc
 [[ -r ~/.bash_aliases ]] && . ~/.bash_aliases
