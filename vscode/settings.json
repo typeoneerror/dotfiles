@@ -9,6 +9,7 @@
     "typeoneerror-web",
     "typescript"
   ],
+  "cSpell.enabled": true,
   "cSpell.enabledLanguageIds": [
     "coffeescript",
     "css",
@@ -146,6 +147,7 @@
   ],
   "vim.textwidth": 100,
 
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
   "window.zoomLevel": 1,
 
   "workbench.colorTheme": "Default High Contrast",
@@ -158,5 +160,4 @@
   "zenMode.fullScreen": false,
   "zenMode.hideStatusBar": false,
   "zenMode.hideTabs": false
-
 }
