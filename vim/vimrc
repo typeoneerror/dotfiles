@@ -175,6 +175,10 @@ map <Leader>e :NERDTreeFind<CR>
 let g:NERDTreeIgnore=['\~$', '^tmp$[[dir]]', '^.git$[[dir]]', '^.sass-cache$[[dir]]', '.DS_Store']
 let g:NERDTreeShowHidden=1
 
+let g:NERDSpaceDelims=1
+let g:NERDCommentEmptyLines=1
+let g:NERDTrimTrailingWhitespace=1
+
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_cmd='CtrlP'
 let g:ctrlp_switch_buffer=0
