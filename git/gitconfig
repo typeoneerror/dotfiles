@@ -1,3 +1,5 @@
+[include]
+  path = ~/.gitconfig.signingkey
 [user]
   name = Benjamin Borowski
   email = ben@weareokidoki.com
