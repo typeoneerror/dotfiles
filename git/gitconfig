@@ -29,6 +29,7 @@
   rc        = rebase --continue
   who       = blame
   annotate  = blame
+  staged    = diff --cached
 [color]
   ui = true
 [push]
