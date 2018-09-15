@@ -2,12 +2,14 @@ antialiased
 callout
 clearfix
 convertkit
+csrf
 datetime
 dropdown
 gsub
 guid
 lastmod
 embedded
+favicon
 filepicker
 flexbox
 focusring
@@ -22,6 +24,8 @@ ltrim
 mailchimp
 mailto
 mergeable
+mimepart
+mimetype
 mixins
 momentize
 nearr
@@ -29,6 +33,7 @@ nofollow
 noindex
 noreferrer
 nokogiri
+numericality
 opentype
 paginatable
 polyfill
@@ -39,9 +44,12 @@ rulesets
 sitemapindex
 srcset
 strftime
+stroustrup
 subdomain
 subnav
+tabindex
 textfield
+uploader
 urlset
 vorbis
 webfonts

@@ -43,6 +43,7 @@ sensei
 sfml
 shiba
 shibas
+splitcols
 spotify
 tiki
 tmpl
