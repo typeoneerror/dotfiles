@@ -1,5 +1,7 @@
 antialiased
 callout
+checkbox
+checkboxes
 clearfix
 convertkit
 csrf
@@ -8,6 +10,8 @@ dropdown
 gsub
 guid
 lastmod
+deserialize
+deserialized
 embedded
 favicon
 filepicker
@@ -28,6 +32,7 @@ mimepart
 mimetype
 mixins
 momentize
+multiselect
 nearr
 nofollow
 noindex
