@@ -3,6 +3,7 @@ callout
 checkbox
 checkboxes
 clearfix
+colorpicker
 convertkit
 csrf
 datetime
