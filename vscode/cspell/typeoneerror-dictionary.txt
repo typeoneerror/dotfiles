@@ -50,7 +50,9 @@ tmpl
 typekit
 unstyled
 upsell
+vimeo
 vimrc
 vitamix
 weareokidoki
+wistia
 zapier
