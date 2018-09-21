@@ -53,6 +53,10 @@
 
   "extensions.autoUpdate": true,
 
+  "files.associations": {
+    "*.js": "javascript"
+  },
+
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
