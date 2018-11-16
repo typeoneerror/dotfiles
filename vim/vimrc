@@ -141,7 +141,12 @@ nnoremap <Leader>2 :split<CR><C-w>j
 nnoremap <C-Up> :bn<CR>
 nnoremap <C-Down> :bp<CR>
 
+" Strip all trailing spaces
 nmap <Leader>sw :StripWhitespace<CR>
+
+" Copy/paste inside quotes
+nmap <Leader>y yi"
+nmap <Leader>p vi"p
 
 cnoreabbrev w. w %:h/
 
