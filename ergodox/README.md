@@ -1,1 +1,1 @@
-https://configure.ergodox-ez.com/layouts/JmVm/latest/0
+https://configure.ergodox-ez.com/layouts/N7o4/latest/0
