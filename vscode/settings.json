@@ -34,7 +34,7 @@
 
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "solid",
-  "editor.fontSize": 18,
+  "editor.fontSize": 14,
   "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
@@ -51,7 +51,7 @@
 
   "explorer.confirmDragAndDrop": false,
 
-  "extensions.autoUpdate": true,
+  "extensions.autoUpdate": false,
 
   "files.associations": {
     "*.js": "javascript"
@@ -162,16 +162,23 @@
   "vim.textwidth": 100,
 
   "window.title": "${activeEditorMedium}${separator}${rootName}",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 2,
 
-  "workbench.colorTheme": "Default High Contrast",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#222222"
+  },
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.enablePreviewFromQuickOpen": true,
   "workbench.editor.showTabs": true,
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "vscode-icons",
+  "workbench.settings.editor": "ui",
   "workbench.sideBar.location": "left",
   "workbench.statusBar.visible": true,
 
   "zenMode.fullScreen": false,
   "zenMode.hideStatusBar": false,
-  "zenMode.hideTabs": false
+  "zenMode.hideTabs": false,
+  "zenMode.hideActivityBar": false,
+  "zenMode.restore": true
 }
