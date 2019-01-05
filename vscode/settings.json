@@ -147,6 +147,16 @@
           "command": "editor.action.removeCommentLine"
         }
       ]
+    },
+    // Yank inside quotes
+    {
+      "before": ["leader", "y"],
+      "after": ["y", "i", "\""]
+    },
+    // Paste inside quotes
+    {
+      "before": ["leader", "p"],
+      "after": ["v", "i", "\"", "p"]
     }
   ],
   "vim.textwidth": 100,
