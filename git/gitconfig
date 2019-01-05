@@ -39,3 +39,5 @@
   smudge = git-media-smudge %f
 [core]
   excludesfile = ~/.gitignore
+[diff]
+  tool = vimdiff
