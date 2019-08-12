@@ -4,6 +4,7 @@ source $DOTFILES_HOME/shell/env
 source $DOTFILES_HOME/shell/prompt
 source $DOTFILES_HOME/shell/alias
 
+source $DOTFILES_HOME/shell/extras/docker
 source $DOTFILES_HOME/shell/extras/ds_store
 source $DOTFILES_HOME/shell/extras/filesystem
 source $DOTFILES_HOME/shell/extras/hidden_files
