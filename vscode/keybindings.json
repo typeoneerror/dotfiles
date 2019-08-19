@@ -1,0 +1,51 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "ctrl+shift+w",
+    "command": "editor.action.toggleWordWrap"
+  },
+  {
+    "key": "cmd+ctrl+w",
+    "command": "workbench.action.closeAllEditors"
+  },
+  {
+    "key": "shift+cmd+0",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+right",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "cmd+1",
+    "command": "workbench.action.focusSideBar"
+  },
+  {
+    "key": "cmd+0",
+    "command": "-workbench.action.focusSideBar"
+  },
+  {
+    "key": "cmd+0",
+    "command": "workbench.action.focusFirstEditorGroup"
+  },
+  {
+    "key": "cmd+1",
+    "command": "-workbench.action.focusFirstEditorGroup"
+  },
+  {
+    "key": "shift+alt+cmd+[",
+    "command": "workbench.action.moveEditorLeftInGroup"
+  },
+  {
+    "key": "cmd+k shift+cmd+left",
+    "command": "-workbench.action.moveEditorLeftInGroup"
+  },
+  {
+    "key": "shift+alt+cmd+]",
+    "command": "workbench.action.moveEditorRightInGroup"
+  },
+  {
+    "key": "cmd+k shift+cmd+right",
+    "command": "-workbench.action.moveEditorRightInGroup"
+  }
+]
