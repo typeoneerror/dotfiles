@@ -4,3 +4,5 @@ export GID=$(id -g ${whoami})
 
 alias docker="env UID=$(id -u ${whoami}) GID=$(id -g ${whoami}) docker"
 alias docker-compose="env UID=$(id -u ${whoami}) GID=$(id -g ${whoami}) docker-compose"
+
+alias docker-build-latest="env UID=$(id -u ${whoami}) GID=$(id -g ${whoami}) docker build . -t eternal-sledgehammer/base:latest -f ./docker/Dockerfile.base --build-arg UID=$(id -u ${whoami}) --build-arg GID=$(id -u ${whoami})"

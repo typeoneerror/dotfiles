@@ -1,6 +1,7 @@
 # Locations
 alias dev='cd $HOME/Dev'
 alias dt='cd $HOME/Desktop'
+alias pn='cd $HOME/Dev/pn'
 
 # Git
 alias gdiff='git diff | subl'
