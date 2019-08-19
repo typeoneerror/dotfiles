@@ -4,24 +4,3 @@ export GID=$(id -g ${whoami})
 
 alias docker="env UID=$(id -u ${whoami}) GID=$(id -g ${whoami}) docker"
 alias docker-compose="env UID=$(id -u ${whoami}) GID=$(id -g ${whoami}) docker-compose"
-
-# Start pinata-ssh-forward daemon if it isn't already running
-# (Provided by https://github.com/jeradg/oh-my-zsh/blob/master/.zshrc#L112)
-# (which was Inspired by https://stackoverflow.com/a/38576401)
-if [ ! "$(docker ps -q -f name=pinata-sshd)" ]; then
-  if [ "$(docker ps -aq -f status=exited -f name=pinata-sshd)" ]; then
-    # cleanup
-    echo "pinata-ssh-forward is stopped but has not been removed. Removing it before continuing.\n"
-    docker rm pinata-sshd
-  fi
-
-  echo "Starting pinata-ssh-forward to forward ssh agent socket into docker containers.\n"
-
-  sh pinata-ssh-forward
-
-  if [ $? != "0" ]; then
-    echo "ERROR: pinata-ssh-forward failed."
-    echo "       Please run \"ssh-add -l\" to confirm that your ssh identity has been added."
-    echo "       If it has not, run \"ssh-add\" and try running pinata-ssh-forward again."
-  fi
-fi
