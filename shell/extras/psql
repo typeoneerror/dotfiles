@@ -1,3 +1,7 @@
+: ${POSTGRE_VERSION=10}
+export POSTGRE_PATH="/Applications/Postgres.app/Contents/Versions/$POSTGRE_VERSION/bin"
+export PATH="$POSTGRE_PATH:$PATH"
+
 # Start postgre
 function pg_start
 {
