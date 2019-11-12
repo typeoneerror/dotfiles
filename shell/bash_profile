@@ -9,11 +9,13 @@ source $DOTFILES_HOME/shell/extras/ds_store
 source $DOTFILES_HOME/shell/extras/filesystem
 source $DOTFILES_HOME/shell/extras/hidden_files
 source $DOTFILES_HOME/shell/extras/history_of_file
+source $DOTFILES_HOME/shell/extras/nix
 source $DOTFILES_HOME/shell/extras/nvm
 source $DOTFILES_HOME/shell/extras/go
 source $DOTFILES_HOME/shell/extras/process
 source $DOTFILES_HOME/shell/extras/psql
-source $DOTFILES_HOME/shell/extras/rvm
+source $DOTFILES_HOME/shell/extras/py
+source $DOTFILES_HOME/shell/extras/rbenv
 source $DOTFILES_HOME/shell/extras/svn
 source $DOTFILES_HOME/shell/extras/title
 
