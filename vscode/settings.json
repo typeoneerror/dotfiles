@@ -1,37 +1,5 @@
 {
   "breadcrumbs.enabled": true,
-  "cSpell.language": "en-GB,en",
-  "cSpell.dictionaryDefinitions": [
-    { "name": "typeoneerror-dictionary", "path": "/Users/typeoneerror/dotfiles/vscode/cspell/typeoneerror-dictionary.txt" },
-    { "name": "typeoneerror-web", "path": "/Users/typeoneerror/dotfiles/vscode/cspell/typeoneerror-web.txt" }
-  ],
-  "cSpell.dictionaries": [
-    "typeoneerror-dictionary",
-    "typeoneerror-web",
-    "typescript"
-  ],
-  "cSpell.enabled": true,
-  "cSpell.enabledLanguageIds": [
-    "coffeescript",
-    "css",
-    "erb",
-    "go",
-    "handlebars",
-    "html",
-    "javascript",
-    "javascriptreact",
-    "json",
-    "markdown",
-    "php",
-    "plaintext",
-    "scss",
-    "slim",
-    "text",
-    "typescript",
-    "typescriptreact",
-    "yaml",
-    "yml"
-  ],
 
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "solid",
@@ -41,7 +9,7 @@
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "boundary",
-  "editor.tabCompletion": true,
+  "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 100,
@@ -51,12 +19,26 @@
     "markdown"
   ],
 
+  "eslint.validate":[
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "vue",
+      "autoFix": false
+    }
+  ],
+
   "explorer.confirmDragAndDrop": false,
 
   "extensions.autoUpdate": false,
 
   "files.associations": {
-    "*.js": "javascript"
+    "*.js": "javascript",
+    "*.js.erb": "javascript",
+    "Appfile": "ruby",
+    "Fastfile": "ruby",
+    "Gymfile": "ruby",
+    "Matchfile": "ruby"
   },
 
   "files.exclude": {
@@ -85,12 +67,17 @@
   "languageStylus.useSeparator": false,
 
   "[markdown]": {
-    "editor.wordWrap": "on",
     "editor.quickSuggestions": false,
+    "editor.tabSize": 4,
+    "editor.wordWrap": "on",
     "files.trimTrailingWhitespace": false
   },
 
   "prettier.singleQuote": true,
+
+  "[swift]": {
+    "editor.tabSize": 2
+  },
 
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
