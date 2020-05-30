@@ -16,13 +16,15 @@
   logf      = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
   logm      = log --author=USERNAME --pretty=format:'%h %cd %s' --date=short
   logn      = log --graph --decorate --pretty=oneline --abbrev-commit
+  logo      = log master.. --oneline
   panic     = !tar cvf ../git_panic.tar *
   diffa     = diff --color --word-diff-regex=.
-  diffw     = diff --word-diff=plain
-  diffl     = diff --ignore-space-at-eol
-  diffm     = diff --diff-filter=M
   diffc     = diff --color-words=.
+  diffl     = diff --ignore-space-at-eol
+  diffo     = diff master..
+  diffm     = diff --diff-filter=M
   diffn     = diff --name-only
+  diffw     = diff --word-diff=plain
   gh        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/tree/$(git rev-parse --abbrev-ref HEAD)\""
   pr        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/pull/new/$(git rev-parse --abbrev-ref HEAD)\""
   cne       = commit --all --amend --no-edit
