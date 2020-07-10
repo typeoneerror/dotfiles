@@ -1,3 +1,6 @@
+# Silence Catalina
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 # Points to this repository checked out
 export DOTFILES_HOME=~/dotfiles
 
