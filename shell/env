@@ -12,5 +12,7 @@ export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GPG_TTY=$(tty)
 
+export ARCHFLAGS="-arch x86_64"
+
 # Main path configuration
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
