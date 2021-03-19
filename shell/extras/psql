@@ -3,13 +3,11 @@ export POSTGRE_PATH="/Applications/Postgres.app/Contents/Versions/$POSTGRE_VERSI
 export PATH="$POSTGRE_PATH:$PATH"
 
 # Start postgre
-function pg_start
-{
+function pg_start {
     pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
 }
 
 # Stop postgre
-function pg_stop
-{
+function pg_stop {
     pg_ctl -D /usr/local/var/postgres stop -s -m fast
 }

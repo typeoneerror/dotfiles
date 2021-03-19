@@ -7,8 +7,7 @@ alias docker-compose="env UID=$(id -u ${whoami}) GID=$(id -g ${whoami}) docker-c
 
 alias docker-build-latest="env UID=$(id -u ${whoami}) GID=$(id -g ${whoami}) docker build . -t eternal-sledgehammer/base:latest -f ./docker/Dockerfile.base --build-arg UID=$(id -u ${whoami}) --build-arg GID=$(id -u ${whoami})"
 
-dockercompose-wrapper()
-{
+dockercompose-wrapper() {
     # If in a git repo - call git mv. otherwise- call mv
     if [ -f docker-compose-minimal-osx.yml ];
     then

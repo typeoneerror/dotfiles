@@ -1,12 +1,10 @@
 # Add files via svn
-function svn_add
-{
+function svn_add {
     svn add --force .
 }
 
 # Add svn:keywords Id property recursively
-function svn_add_id
-{
+function svn_add_id {
   find . \( -name "*.as" -o \
             -name "*.css" -o \
             -name "*.cpp" -o \
@@ -23,7 +21,6 @@ function svn_add_id
 }
 
 # Delete things not added
-function svn_del
-{
+function svn_del {
     svn status | grep '\!' | awk '{print $2;}' | xargs svn rm;
 }

@@ -2,7 +2,6 @@
 export FIGNORE=$FIGNORE:.DS_Store
 
 # Remove .DS_Store files
-function remove_ds_store
-{
+function remove_ds_store {
     find . -name .DS_Store -type f -delete
 }
