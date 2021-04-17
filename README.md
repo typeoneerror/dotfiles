@@ -15,8 +15,11 @@ Clone the git repo to your user (~) folder.
 cd ~
 git clone git@github.com:typeoneerror/dotfiles.git
 cd dotfiles
-git submodule update --init --recursive
 ```
+
+## vim
+
+Now using [SpaceVim](https://spacevim.org), though the original vimrc still exists in ~vim/vimrc~.
 
 ## Linking
 
@@ -24,24 +27,6 @@ Run the link setup script to create symbolic links to the files in $HOME.
 
     $ ~/dotfiles/link.sh
 
-## Install the dependencies
+## Install fonts
 
-The vim setup relies on [Ag](https://github.com/ggreer/the_silver_searcher) for search and fuzzy finding files. You should install [Homebrew](http://brew.sh) if you have not already installed it. Then run:
-
-    $ brew install the_silver_searcher
-
-This setup also relies on powerline plugins and therefore the powerline fonts are recommended. Follow the install instructions in [powerline/fonts](https://github.com/powerline/fonts) repo to add them.
-
-## Adding a new vim dependency
-
-vim setup uses Pathogen with dependencies added to this git repo as submodules. For example, to add the elm.vim bundle, you would do:
-
-    git submodule add git@github.com:lambdatoast/elm.vim.git vim/bundle/elm.vim
-
-## Removing a vim dependency
-
-See: [https://stackoverflow.com/a/1260982/53653](https://stackoverflow.com/a/1260982/53653)
-
-## Updating a vim dependency
-
-SEE: [https://stackoverflow.com/a/5828396/53653](https://stackoverflow.com/a/5828396/53653)
+This setup relies on powerline plugins and therefore the powerline fonts are recommended. Follow the install instructions in [powerline/fonts](https://github.com/powerline/fonts) repo to add them.
