@@ -4,20 +4,13 @@
   name = Benjamin Borowski
   email = ben@weareokidoki.com
 [alias]
-  st        = status
-  nl        = log --oneline
+  annotate  = blame
   br        = branch
+  ci        = commit
+  cne       = commit --all --amend --no-edit
   co        = checkout
   cp        = cherry-pick
-  ds        = diff --staged
   di        = diff
-  fetchall  = fetch -v --all
-  hist      = log --follow -p
-  logf      = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
-  logm      = log --author=USERNAME --pretty=format:'%h %cd %s' --date=short
-  logn      = log --graph --decorate --pretty=oneline --abbrev-commit
-  logo      = log master.. --oneline
-  panic     = !tar cvf ../git_panic.tar *
   diffa     = diff --color --word-diff-regex=.
   diffc     = diff --color-words=.
   diffl     = diff --ignore-space-at-eol
@@ -25,13 +18,22 @@
   diffm     = diff --diff-filter=M
   diffn     = diff --name-only
   diffw     = diff --word-diff=plain
+  ds        = diff --staged
+  fetchall  = fetch -v --all
   gh        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/tree/$(git rev-parse --abbrev-ref HEAD)\""
+  hist      = log --follow -p
+  logf      = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+  logm      = log --author=USERNAME --pretty=format:'%h %cd %s' --date=short
+  logn      = log --graph --decorate --pretty=oneline --abbrev-commit
+  logo      = log master.. --oneline
+  nl        = log --oneline
+  panic     = !tar cvf ../git_panic.tar *
   pr        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/pull/new/$(git rev-parse --abbrev-ref HEAD)\""
-  cne       = commit --all --amend --no-edit
   rc        = rebase --continue
-  who       = blame
-  annotate  = blame
+  st        = status
   staged    = diff --cached
+  sw        = switch
+  who       = blame
 [color]
   ui = true
 [push]
