@@ -1,44 +1,83 @@
 {
   "breadcrumbs.enabled": true,
 
+  "cSpell.language": "en-GB,en",
+  "cSpell.dictionaryDefinitions": [
+    {
+      "name": "typeoneerror-dictionary",
+      "path": "/Users/typeoneerror/dotfiles/vscode/cspell/typeoneerror-dictionary.txt"
+    },
+    {
+      "name": "typeoneerror-web",
+      "path": "/Users/typeoneerror/dotfiles/vscode/cspell/typeoneerror-web.txt"
+    }
+  ],
+  "cSpell.dictionaries": ["typeoneerror-dictionary", "typeoneerror-web", "typescript"],
+  "cSpell.enabled": false,
+  "cSpell.enableFiletypes": [
+    "coffeescript",
+    "css",
+    "erb",
+    "go",
+    "handlebars",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "markdown",
+    "php",
+    "plaintext",
+    "scss",
+    "slim",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yaml",
+    "yml"
+  ],
+
+  "diffEditor.renderSideBySide": false,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false
+  },
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 18,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "Monolisa, 'Operator Mono', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 20,
+  "editor.formatOnSave": false,
+  "editor.lineHeight": 30,
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": false,
-  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [80, 100],
+  "editor.suggestSelection": "first",
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 100,
 
-  "emmet.excludeLanguages": [
-    "haml",
-    "markdown"
-  ],
-
-  "eslint.validate":[
-    "javascript",
-    "javascriptreact",
-    {
-      "language": "vue",
-      "autoFix": false
-    }
-  ],
+  "emmet.excludeLanguages": ["haml", "markdown"],
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
 
   "explorer.confirmDragAndDrop": false,
 
   "extensions.autoUpdate": false,
 
   "files.associations": {
+    "*.css": "postcss",
     "*.js": "javascript",
     "*.js.erb": "javascript",
+    "*.talon": "python",
     "Appfile": "ruby",
     "Fastfile": "ruby",
     "Gymfile": "ruby",
-    "Matchfile": "ruby"
+    "Matchfile": "ruby",
+    "Pluginfile": "ruby",
   },
 
   "files.exclude": {
@@ -54,26 +93,50 @@
     "**/package-lock.json": true,
     "**/npm-shrinkwrap.json": true,
     "**/tmp": true,
-    "**/.sass-cache": true,
     "**/*.log": true,
     "**/*.dump": true,
-    "**/*.rdb": true
+    "**/*.rdb": true,
+    "**/.nix-node": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
 
-  "flow.pathToFlow": "${workspaceRoot}/node_modules/.bin/flow",
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
 
-  "languageStylus.useSeparator": false,
+  "java.semanticHighlighting.enabled": true,
 
   "[markdown]": {
-    "editor.quickSuggestions": false,
     "editor.tabSize": 4,
+    "editor.quickSuggestions": false,
     "editor.wordWrap": "on",
     "files.trimTrailingWhitespace": false
   },
 
+  "prettier.arrowParens": "always",
+  "prettier.bracketSpacing": true,
+  "prettier.endOfLine": "lf",
+  "prettier.jsxBracketSameLine": false,
+  "prettier.jsxSingleQuote": false,
+  "prettier.printWidth": 100,
+  "prettier.quoteProps": "as-needed",
+  "prettier.semi": true,
   "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "es5",
+  "prettier.useTabs": false,
+
+  "python.languageServer": "Microsoft",
+
+  "[ruby]": {
+    "editor.defaultFormatter": "rebornix.ruby"
+  },
+
+  "shellcheck.exclude": ["SC1090"],
 
   "[swift]": {
     "editor.tabSize": 2
@@ -90,6 +153,12 @@
   },
   "vim.hlsearch": true,
   "vim.ignorecase": false,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
   "vim.leader": "<Space>",
   "vim.normalModeKeyBindings": [
     // Open line under current line
@@ -150,25 +219,28 @@
   ],
   "vim.textwidth": 100,
 
-  "window.title": "${activeEditorMedium}${separator}${rootName}",
-  "window.zoomLevel": 1,
+  "vsicons.dontShowNewVersionMessage": true,
 
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#222222"
-  },
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+
+  "workbench.colorTheme": "Dracula",
   "workbench.editor.enablePreview": true,
-  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": true,
   "workbench.editor.tabSizing": "shrink",
   "workbench.fontAliasing": "antialiased",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.settings.editor": "ui",
+  "workbench.settings.editor": "json",
+  "workbench.settings.useSplitJSON": false,
   "workbench.sideBar.location": "left",
+  "workbench.startupEditor": "welcomePage",
   "workbench.statusBar.visible": true,
 
+  "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
-  "zenMode.hideStatusBar": false,
+  "zenMode.hideActivityBar": true,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": true,
   "zenMode.hideTabs": false,
-  "zenMode.hideActivityBar": false,
-  "zenMode.restore": true
+  "zenMode.restore": false
 }
