@@ -8,7 +8,7 @@ alias pnd='pndev'
 alias gdiff='git diff | subl'
 alias gdiffb='git log master.. --oneline | wc -l'
 alias sdiff='svn diff | subl'
-alias gitcop="git status --porcelain | awk '/\w*\.rb$/ { print $2; }' | xargs rubocop"
+alias gitcop="git status --porcelain | awk '/\w*\.rb$/ { print $2; }' | xargs bundle exec rubocop"
 
 # Shortcuts
 alias dnsflush='dscacheutil -flushcache; sudo killall -HUP mDNSResponder;'
