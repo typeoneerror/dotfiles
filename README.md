@@ -4,7 +4,7 @@ dotfiles
 What is this?
 -------------
 
-dotfiles for vim, git and various other programs.
+dotfiles for vim (SpaceVim), git and various other programs.
 
 Setup
 -----
@@ -21,12 +21,12 @@ cd dotfiles
 
 Now using [SpaceVim](https://spacevim.org), though the original vimrc still exists in ~vim/vimrc~.
 
+Follow the [install instructions](https://spacevim.org/quick-start-guide/#linux-and-macos).
+
 ## Linking
 
 Run the link setup script to create symbolic links to the files in $HOME.
 
-    $ ~/dotfiles/link.sh
-
-## Install fonts
-
-This setup relies on powerline plugins and therefore the powerline fonts are recommended. Follow the install instructions in [powerline/fonts](https://github.com/powerline/fonts) repo to add them.
+```bash
+$ ~/dotfiles/link.sh
+```
