@@ -104,7 +104,7 @@ on_WHITE='\033[0;107m'   # White
 
 # Show git branch with color in prompt
 function color_my_prompt {
-    local user_and_host="\[${gREEN}\][\u]"
+    local user_and_host="\[${gREEN}\][\u@\h]"
     local current_location="\[${bLUE}\]\w"
     local git_branch_color="\[${pURPLE}\]"
     local git_branch='`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'
