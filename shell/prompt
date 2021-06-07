@@ -103,14 +103,12 @@ on_CYAN='\033[0;106m'    # Cyan
 on_WHITE='\033[0;107m'   # White
 
 # Show git branch with color in prompt
-function color_my_prompt {
-    local user_and_host="\[${gREEN}\][\u]"
-    local current_location="\[${bLUE}\]\w"
-    local git_branch_color="\[${pURPLE}\]"
-    local git_branch='`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'
-    local prompt_tail="\[${WHITE}\]$"
-    local last_color="\[${off}\]"
 
-    export PS1="$user_and_host $current_location $git_branch_color$git_branch$prompt_tail$last_color "
-}
-color_my_prompt
+user_and_host="\[${gREEN}\][\u]"
+current_location="\[${bLUE}\]\w"
+git_branch_color="\[${pURPLE}\]"
+git_branch='`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'
+prompt_tail="\[${WHITE}\]$"
+last_color="\[${off}\]"
+
+export PS1="$user_and_host $current_location $git_branch_color$git_branch$prompt_tail$last_color "
