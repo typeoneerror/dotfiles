@@ -9,3 +9,5 @@ ln -sv ~/dotfiles/shell/bash_profile ~/.bash_profile
 ln -sv ~/dotfiles/shell/inputrc ~/.inputrc
 
 ln -sv ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
+
+ln -sv ~/dotfiles/psql/psqlrc ~/.psqlrc
