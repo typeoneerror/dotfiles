@@ -12,6 +12,7 @@ alias gitcop="git status --porcelain | awk '/\w*\.rb$/ { print $2; }' | xargs bu
 
 # Shortcuts
 alias dnsflush='dscacheutil -flushcache; sudo killall -HUP mDNSResponder;'
+alias fixme='nix-shell -p tmate --run tmate'
 alias ll='ls -al'
 alias npm-exec='PATH=$(npm bin):$PATH'
 alias so='du -sh'
