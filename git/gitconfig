@@ -20,16 +20,25 @@
   diffw     = diff --word-diff=plain
   ds        = diff --staged
   fetchall  = fetch -v --all
+  fix       = !sh -c 'REV=$(git rev-parse $1) && git add . && git commit --fixup $@ && git rebase -i --autosquash $REV^' -
   gh        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/tree/$(git rev-parse --abbrev-ref HEAD)\""
   hist      = log --follow -p
+  la        = rev-parse HEAD
+  las       = rev-parse --short HEAD
+  ll        = log --oneline
   logf      = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
   logm      = log --author=USERNAME --pretty=format:'%h %cd %s' --date=short
   logn      = log --graph --decorate --pretty=oneline --abbrev-commit
-  logo      = log master.. --oneline
-  nl        = log --oneline
+  logol     = log master.. --oneline
+  logo      = log main.. --oneline
+  oops      = !git add . && git fix && git rim && :
   panic     = !tar cvf ../git_panic.tar *
   pr        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/pull/new/$(git rev-parse --abbrev-ref HEAD)\""
   rc        = rebase --continue
+  riml      = rebase -i master --autosquash
+  rim       = rebase -i main --autosquash
+  rs        = restore --staged
+  sq        = !sh -c 'REV=$(git rev-parse $1) && git commit --squash $@ && git rebase -i --autosquash $REV^' -
   st        = status
   staged    = diff --cached
   sw        = switch
