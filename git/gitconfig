@@ -10,6 +10,7 @@
   cne       = commit --all --amend --no-edit
   co        = checkout
   cp        = cherry-pick
+  cpn       = cherry-pick -n
   di        = diff
   diffa     = diff --color --word-diff-regex=.
   diffc     = diff --color-words=.
@@ -26,12 +27,11 @@
   la        = rev-parse HEAD
   las       = rev-parse --short HEAD
   ll        = log --oneline
-  logf      = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
-  logm      = log --author=USERNAME --pretty=format:'%h %cd %s' --date=short
-  logn      = log --graph --decorate --pretty=oneline --abbrev-commit
-  logol     = log master.. --oneline
-  logo      = log main.. --oneline
-  oops      = !git add . && git fix && git rim && :
+  lf        = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
+  lm        = log --author=USERNAME --pretty=format:'%h %cd %s' --date=short
+  ln        = log --graph --decorate --pretty=oneline --abbrev-commit
+  lgl       = log master.. --oneline
+  lg        = log main.. --oneline
   panic     = !tar cvf ../git_panic.tar *
   pr        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/pull/new/$(git rev-parse --abbrev-ref HEAD)\""
   rc        = rebase --continue
@@ -40,6 +40,9 @@
   rs        = restore --staged
   sq        = !sh -c 'REV=$(git rev-parse $1) && git commit --squash $@ && git rebase -i --autosquash $REV^' -
   st        = status
+  stl       = stash list
+  stp       = stash pop
+  stu       = stash -u
   staged    = diff --cached
   sw        = switch
   who       = blame
