@@ -45,6 +45,7 @@
   stu       = stash -u
   staged    = diff --cached
   sw        = switch
+  swc       = switch -c
   who       = blame
 [color]
   ui = true
