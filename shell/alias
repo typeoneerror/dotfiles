@@ -1,6 +1,7 @@
 # Locations
 alias dev='cd $HOME/Dev'
 alias dt='cd $HOME/Desktop'
+alias nuc='ssh nuc'
 alias pn='cd $HOME/Dev/pn'
 alias pnd='pndev'
 
