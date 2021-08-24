@@ -19,11 +19,13 @@
   diffm     = diff --diff-filter=M
   diffn     = diff --name-only
   diffw     = diff --word-diff=plain
+  do        = !sh -c 'BRANCH=$(git rev-parse --abbrev-ref HEAD) && git diff origin/$BRANCH' -
   ds        = diff --staged
   fetchall  = fetch -v --all
   fix       = !sh -c 'REV=$(git rev-parse $1) && git add . && git commit --fixup $@ && git rebase -i --autosquash $REV^' -
   gh        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/tree/$(git rev-parse --abbrev-ref HEAD)\""
   hist      = log --follow -p
+  ji        = !sh -c 'REV=$(git rev-parse --abbrev-ref HEAD) && git commit -m \"[$REV] $1\"' -
   la        = rev-parse HEAD
   las       = rev-parse --short HEAD
   ll        = log --oneline
@@ -33,6 +35,8 @@
   lgl       = log master.. --oneline
   lg        = log main.. --oneline
   panic     = !tar cvf ../git_panic.tar *
+  pu        = push
+  put       = push -u origin
   pr        = "!open \"$(git remote -v | grep origin | grep push | cut -f 2 | cut -d \" \" -f 1 | sed -e \"s|git@\\(.*\\):\\(.*\\).git|https://\\1/\\2|\")/pull/new/$(git rev-parse --abbrev-ref HEAD)\""
   rc        = rebase --continue
   riml      = rebase -i master --autosquash
