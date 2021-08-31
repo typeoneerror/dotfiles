@@ -12,7 +12,9 @@ export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GPG_TTY=$(tty)
 
+# Other flags
 export ARCHFLAGS="-arch x86_64"
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 # Main path configuration
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
