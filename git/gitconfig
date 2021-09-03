@@ -34,8 +34,9 @@
   lf        = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --abbrev-commit --date=relative
   lm        = log --author=USERNAME --pretty=format:'%h %cd %s' --date=short
   ln        = log --graph --decorate --pretty=oneline --abbrev-commit
+  lg        = log --oneline
   lgl       = log master.. --oneline
-  lg        = log main.. --oneline
+  lgm       = log main.. --oneline
   panic     = !tar cvf ../git_panic.tar *
   pu        = push
   put       = push -u origin
