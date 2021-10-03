@@ -1,5 +1,6 @@
 {
   "files.exclude": {
-    "**/.git": false
+    "**/.git": false,
+    "vim/packages/**": true
   }
 }

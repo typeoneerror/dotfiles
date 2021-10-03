@@ -1,6 +1,12 @@
 #!/bin/sh
 
-ln -sv ~/dotfiles/vim/spacevim/init.toml ~/.SpaceVim.d/init.toml
+ln -sv ~/dotfiles/vim/vimrc ~/.vimrc
+
+mkdir -p ~/.config/nvim
+ln -sv ~/.vimrc ~/.config/nvim/init.vim
+
+mkdir -p ~/.vim/pack/packages
+ln -sv ~/dotfiles/vim/packages ~/.vim/pack/packages/start
 
 ln -sv ~/dotfiles/git/gitconfig ~/.gitconfig
 ln -sv ~/dotfiles/git/gitignore ~/.gitignore
