@@ -53,6 +53,7 @@
   staged    = diff --cached
   sw        = switch
   swc       = switch -c
+  undo      = reset --soft HEAD^
   who       = blame
 [color]
   ui = true
