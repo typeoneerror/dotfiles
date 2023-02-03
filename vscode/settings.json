@@ -38,10 +38,10 @@
 
   "diffEditor.renderSideBySide": false,
 
+  "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-
   "editor.colorDecorators": true,
   "editor.cursorStyle": "line",
   "editor.cursorBlinking": "solid",
@@ -51,6 +51,7 @@
   "editor.fontLigatures": false,
   "editor.fontSize": 20,
   "editor.formatOnSave": false,
+  "editor.inlineSuggest.enabled": true,
   "editor.insertSpaces": true,
   "editor.lineHeight": 30,
   "editor.lineNumbers": "on",
@@ -72,6 +73,8 @@
   "emmet.includeLanguages": {
     "postcss": "css"
   },
+
+  "eslint.lintTask.enable": false,
 
   "explorer.confirmDragAndDrop": false,
 
@@ -120,9 +123,15 @@
 
   "java.semanticHighlighting.enabled": true,
 
+  "javascript.validate.enable": false,
+
   "[markdown]": {
     "editor.tabSize": 4,
-    "editor.quickSuggestions": false,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
     "editor.wordWrap": "off",
     "files.trimTrailingWhitespace": false
   },
@@ -235,13 +244,13 @@
 
   "window.title": "${activeEditorMedium}${separator}${rootName}",
 
-  "workbench.colorTheme": "Monokai Pro (Filter Machine)",
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
   "workbench.editor.enablePreview": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.showTabs": true,
   "workbench.editor.tabSizing": "shrink",
   "workbench.fontAliasing": "antialiased",
-  "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
   "workbench.preferredDarkColorTheme": "Dracula Pro (Van Helsing)",
   "workbench.settings.editor": "json",
   "workbench.settings.useSplitJSON": false,
@@ -255,5 +264,6 @@
   "zenMode.hideLineNumbers": false,
   "zenMode.hideStatusBar": true,
   "zenMode.hideTabs": false,
-  "zenMode.restore": false
+  "zenMode.restore": false,
+  "window.zoomLevel": 1,
 }
