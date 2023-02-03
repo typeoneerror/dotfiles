@@ -1,5 +1,15 @@
 export DOTFILES_HOME=~/dotfiles
 
+# Silence Catalina
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Other flags
+export ARCHFLAGS="-arch x86_64"
+export ERL_AFLAGS="-kernel shell_history enabled"
+
+# Main path configuration
+export PATH="$HOME/bin:/usr/local/bin:$PATH"
+
 source $DOTFILES_HOME/shell/env
 source $DOTFILES_HOME/shell/prompt
 source $DOTFILES_HOME/shell/alias
@@ -8,8 +18,10 @@ source $DOTFILES_HOME/shell/extras/android
 source $DOTFILES_HOME/shell/extras/docker
 source $DOTFILES_HOME/shell/extras/ds_store
 source $DOTFILES_HOME/shell/extras/filesystem
+source $DOTFILES_HOME/shell/extras/git
 source $DOTFILES_HOME/shell/extras/hidden_files
 source $DOTFILES_HOME/shell/extras/history_of_file
+source $DOTFILES_HOME/shell/extras/homebrew
 source $DOTFILES_HOME/shell/extras/nix
 source $DOTFILES_HOME/shell/extras/nvm
 source $DOTFILES_HOME/shell/extras/go

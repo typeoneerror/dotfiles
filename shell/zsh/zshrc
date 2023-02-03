@@ -1,0 +1,1 @@
+export PROMPT='%B%F{240}%1~%f%b %# '
