@@ -3,4 +3,6 @@ export DOTFILES_HOME=~/dotfiles
 source $DOTFILES_HOME/shell/env
 source $DOTFILES_HOME/shell/alias
 
+source $DOTFILES_HOME/shell/extras/git
+source $DOTFILES_HOME/shell/extras/hidden_files
 source $DOTFILES_HOME/shell/extras/homebrew
