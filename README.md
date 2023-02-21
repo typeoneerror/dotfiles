@@ -4,7 +4,7 @@ dotfiles
 What is this?
 -------------
 
-dotfiles for vim, git and various other programs.
+[@typeoneerror](https://github.com/typeoneerror)'s dotfiles for vim, git, and various other programs as well as configurations and keyboard layouts.
 
 Setup
 -----
