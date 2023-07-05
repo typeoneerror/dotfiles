@@ -1,0 +1,2 @@
+# Allow [ or ] whereever you want
+unsetopt nomatch
