@@ -1,0 +1,38 @@
+# SEE: https://stackoverflow.com/a/75561522/53653
+
+# Show git branch with color in prompt
+function update_prompt {
+  local branch=""
+  branch=$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
+
+  local git_status=$(git status --porcelain 2>/dev/null)
+
+  local color=green
+
+  # modifications
+  if echo "$git_status" | grep -q "^ M"; then
+    color=yellow
+    branch="${branch}*"
+  fi
+
+  # untracked
+  if echo "$git_status" | grep -qE "^ A|^\?\?"; then
+    color=yellow
+    branch="${branch}+"
+  fi
+
+  # deleted
+  if echo "$git_status" | grep -q "^ D"; then
+    color=yellow
+    branch="${branch}-"
+  fi
+
+  if [[ -n "$branch" ]]; then
+    branch=" [%F{${color}}${branch}%F{reset}]"
+  fi
+
+  export PROMPT="%B%F{240}%1~%f%b${branch} %# "
+}
+
+precmd_functions+=(update_prompt)
+update_prompt

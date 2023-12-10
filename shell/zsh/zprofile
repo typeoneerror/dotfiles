@@ -1,7 +1,13 @@
+# zprofile - set the environment for login shells
+# .zshenv → .zprofile → .zshrc → .zlogin → .zlogout
+
 export DOTFILES_HOME=~/dotfiles
 
 source $DOTFILES_HOME/shell/env
 source $DOTFILES_HOME/shell/alias
+
+source $DOTFILES_HOME/shell/zsh/prompt
+source $DOTFILES_HOME/shell/zsh/options
 
 source $DOTFILES_HOME/shell/extras/git
 source $DOTFILES_HOME/shell/extras/hidden_files

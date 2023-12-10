@@ -1,11 +1,12 @@
+# zshrc - set the environment for interactive shells
+# .zshenv → .zprofile → .zshrc → .zlogin → .zlogout
+
 export DOTFILES_HOME=~/dotfiles
 
-export PROMPT='%B%F{240}%1~%f%b %# '
+
+source $DOTFILES_HOME/shell/zsh/nvm
+source $DOTFILES_HOME/shell/zsh/pyenv
+source $DOTFILES_HOME/shell/zsh/rbenv
 
 source $DOTFILES_HOME/shell/extras/herd
 source $DOTFILES_HOME/shell/extras/mysql
-source $DOTFILES_HOME/shell/extras/nvm
-
-source $DOTFILES_HOME/shell/zsh/options
-source $DOTFILES_HOME/shell/zsh/pyenv
-source $DOTFILES_HOME/shell/zsh/rbenv
