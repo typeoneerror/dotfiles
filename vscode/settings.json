@@ -139,9 +139,9 @@
   },
 
   "prettier.arrowParens": "always",
+  "prettier.bracketSameLine": false,
   "prettier.bracketSpacing": true,
   "prettier.endOfLine": "lf",
-  "prettier.jsxBracketSameLine": false,
   "prettier.jsxSingleQuote": false,
   "prettier.printWidth": 100,
   "prettier.quoteProps": "as-needed",
