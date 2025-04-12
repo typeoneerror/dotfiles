@@ -1,6 +1,8 @@
 anonymize
+apophenia
 arial
 badass
+Balatro
 bootcamp
 borowski
 centerable
@@ -19,11 +21,12 @@ getdrip
 groupable
 headshot
 helvetica
+hirability
 impactful
 inus
 ipad
-ipod
 iphone
+ipod
 macbook
 macchiatos
 mailcatcher
@@ -60,6 +63,7 @@ tiki
 tmpl
 translatables
 typekit
+typeoneerror
 unstyled
 upsell
 validatable

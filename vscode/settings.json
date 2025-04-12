@@ -1,7 +1,6 @@
 {
   "breadcrumbs.enabled": true,
 
-  "cSpell.language": "en-GB,en",
   "cSpell.dictionaryDefinitions": [
     {
       "name": "typeoneerror-dictionary",
@@ -14,55 +13,57 @@
   ],
   "cSpell.dictionaries": ["typeoneerror-dictionary", "typeoneerror-web", "typescript"],
   "cSpell.enabled": false,
-  "cSpell.enableFiletypes": [
-    "coffeescript",
-    "css",
-    "erb",
-    "go",
-    "handlebars",
-    "html",
-    "javascript",
-    "javascriptreact",
-    "json",
-    "markdown",
-    "php",
-    "plaintext",
-    "scss",
-    "slim",
-    "text",
-    "typescript",
-    "typescriptreact",
-    "yaml",
-    "yml"
-  ],
+  "cSpell.enabledFileTypes": {
+    "coffeescript": true,
+    "css": true,
+    "erb": true,
+    "go": true,
+    "handlebars": true,
+    "html": true,
+    "javascript": true,
+    "javascriptreact": true,
+    "json": true,
+    "markdown": true,
+    "php": true,
+    "plaintext": true,
+    "scss": true,
+    "slim": true,
+    "text": true,
+    "typescript": true,
+    "typescriptreact": true,
+    "yaml": true,
+    "yml": true
+  },
+  "cSpell.language": "en-GB,en",
 
   "diffEditor.renderSideBySide": false,
 
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
   "editor.colorDecorators": true,
   "editor.cursorStyle": "line",
   "editor.cursorBlinking": "solid",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": true,
-  "editor.fontFamily": "Monolisa, 'Operator Mono', monospace",
+  "editor.fontFamily": "MonoLisa, 'Operator Mono', monospace",
   "editor.fontLigatures": false,
-  "editor.fontSize": 20,
+  "editor.fontSize": 18,
   "editor.formatOnSave": false,
   "editor.inlineSuggest.enabled": true,
   "editor.insertSpaces": true,
-  "editor.lineHeight": 30,
-  "editor.lineNumbers": "on",
+  "editor.lineHeight": 28,
+  "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
-  "editor.occurrencesHighlight": false,
+  "editor.occurrencesHighlight": "off",
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "selection",
   "editor.rulers": [80, 100],
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
+  "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
   "editor.wordWrapColumn": 100,
@@ -81,7 +82,7 @@
   "extensions.autoUpdate": false,
 
   "files.associations": {
-    "*.css": "css",
+    "*.css": "tailwindcss",
     "*.js": "javascript",
     "*.js.erb": "javascript",
     "*.talon": "python",
@@ -123,6 +124,7 @@
 
   "java.semanticHighlighting.enabled": true,
 
+  "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.validate.enable": false,
 
   "[markdown]": {
@@ -244,10 +246,10 @@
 
   "window.title": "${activeEditorMedium}${separator}${rootName}",
 
-  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.colorTheme": "Dracula Pro (Van Helsing)",
   "workbench.editor.enablePreview": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.showTabs": true,
+  "workbench.editor.showTabs": "multiple",
   "workbench.editor.tabSizing": "shrink",
   "workbench.fontAliasing": "antialiased",
   "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
@@ -263,7 +265,5 @@
   "zenMode.hideActivityBar": true,
   "zenMode.hideLineNumbers": false,
   "zenMode.hideStatusBar": true,
-  "zenMode.hideTabs": false,
-  "zenMode.restore": false,
-  "window.zoomLevel": 1,
+  "zenMode.restore": false
 }
