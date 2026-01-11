@@ -17,7 +17,6 @@ alias gitcop="git status --porcelain | awk '/\w*\.rb$/ { print $2; }' | xargs bu
 # Shortcuts
 alias dnsflush='dscacheutil -flushcache; sudo killall -HUP mDNSResponder;'
 alias ll='ls -al'
-alias npm-exec='PATH=$(npm bin):$PATH'
 alias so='du -sh'
 alias svnsti='svn status --ignore-externals --quiet'
 alias tower='gittower .'

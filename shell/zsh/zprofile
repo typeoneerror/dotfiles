@@ -3,6 +3,8 @@
 
 export DOTFILES_HOME=~/dotfiles
 
+export PATH="$HOME/.local/bin:$PATH"
+
 source $DOTFILES_HOME/shell/env
 source $DOTFILES_HOME/shell/alias
 

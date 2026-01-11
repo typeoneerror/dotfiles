@@ -3,7 +3,6 @@
 
 export DOTFILES_HOME=~/dotfiles
 
-
 source $DOTFILES_HOME/shell/zsh/nvm
 source $DOTFILES_HOME/shell/zsh/pyenv
 source $DOTFILES_HOME/shell/zsh/rbenv
